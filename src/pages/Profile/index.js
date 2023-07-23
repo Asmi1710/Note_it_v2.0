@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const Home = (props)=>{
+import './index.css';
+
+const Profile = ()=>{
 
     return (
         <div>
             <header className="App-header" style={{height:"20vh"}}>HEY</header>
-            <div style={{color:"black", height:"70vh"}}>HOME</div>
+            <div style={{color:"black", height:"70vh"}}>PROFILE</div>
             <footer>END</footer>
         </div>
     )
 }
 
-export default Home;
+export default Profile;
