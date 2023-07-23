@@ -10,7 +10,7 @@ import Profile from './pages/Profile';
 
 function App() {
 
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function App() {
                 :<></>
               }
               <Routes >
-                <Route path='/' element={ <Login />} />
+                <Route path='/' element={ <Login  setLogin={setLogin}/>} />
                 <Route path='home' element={<ProtectedRoute element={<Home />}  loginStatus={login} />} />
                 <Route path='profile' element={ <ProtectedRoute element={<Profile />} loginStatus={ login } /> } />
               </Routes>

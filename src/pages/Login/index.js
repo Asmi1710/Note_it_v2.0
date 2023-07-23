@@ -7,6 +7,7 @@ import SignUpForm from '../../components/login/SignUpForm';
 
 const Login = (props)=>{
 
+    const { setLogin }= props;
     const [form, setForm]= useState('login');
 
     const handleSignup=()=>{
@@ -24,7 +25,7 @@ const Login = (props)=>{
                 <div className='col-lg-6 form-section'>
                 {
                     form==='login'?
-                    <LoginForm handleSignup={handleSignup} />
+                    <LoginForm handleSignup={handleSignup} setLogin={setLogin}/>
                     :
                     <SignUpForm handleLogin={handleLogin} />
                 }
