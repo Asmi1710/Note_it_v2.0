@@ -28,10 +28,35 @@ const IconsList = (props)=>{
     <path d="M43.611 20.083H42V20H24V28H35.303C34.511 30.237 33.072 32.166 31.216 33.571L31.219 33.569L37.409 38.807C36.971 39.205 44 34 44 24C44 22.659 43.862 21.35 43.611 20.083Z" fill="#1976D2"/>
     </svg>
     )
+
+    const rect1 =(<svg width="460" height="184" viewBox="0 0 460 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_5)">
+    <path d="M299 4H456L171.47 180H4L299 4Z" fill="url(#paint0_linear_1_5)" shape-rendering="crispEdges"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_5" x="0" y="0" width="460" height="184" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset/>
+    <feGaussianBlur stdDeviation="2"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_5"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_5" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear_1_5" x1="263.5" y1="-2" x2="263.094" y2="185.406" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#86BCFB" stop-opacity="0"/>
+    <stop offset="0.390625" stop-color="#2F54EA"/>
+    </linearGradient>
+    </defs>
+    </svg>
+    
+    )
     switch(icon){
         case 'passwordShow' : return passwordShow;
         case 'passwordHide' : return passwordHide;
         case 'googleIcon' : return googleIcon;
+        case 'rect1' : return rect1;
     }
 }
 

@@ -1,0 +1,27 @@
+.info-section-conatiner{
+    position: relative;
+}
+
+.logo-fixed{
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo-fixed-text{
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    color: white;
+    font-size: 2rem;
+    font-family: 'PlayfairDisplay-ExtraBoldItalic';
+}
+
+
+.screenshot-fixed{
+    position: absolute;
+    bottom: -1rem;
+    right: -15%;
+}
